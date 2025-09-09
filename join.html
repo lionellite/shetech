@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejoindre SheTech - Formulaire d'inscription</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="join.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="shetech_logo.png" alt="SheTech Logo" class="logo-img">
+                <span class="logo-text">SheTech</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Accueil</a>
+                <a href="index.html#about" class="nav-link">À propos</a>
+                <a href="index.html#programs" class="nav-link">Programmes</a>
+                <a href="index.html#community" class="nav-link">Communauté</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="join-hero">
+        <div class="join-hero-content">
+            <div class="join-hero-text">
+                <h1 class="join-hero-title">
+                    <span class="gradient-text">Rejoignez SheTech</span>
+                    <span class="title-continuation">Transformez votre avenir numérique</span>
+                </h1>
+                <p class="join-hero-subtitle">4 semaines pour maîtriser une compétence numérique à forte valeur ajoutée. Rejoignez 249 autres femmes béninoises dans cette aventure transformatrice.</p>
+                <div class="join-benefits">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🎯</div>
+                        <span>Formation certifiante</span>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">💼</div>
+                        <span>Mentorat personnalisé</span>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🌟</div>
+                        <span>Accès aux espaces UNIPOD</span>
+                    </div>
+                </div>
+            </div>
+            <div class="join-hero-visual">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="registration-section">
+        <div class="container">
+            <div class="registration-wrapper">
+                <div class="registration-info">
+                    <h2 class="section-title">Formulaire d'inscription</h2>
+                    <p class="section-subtitle">Remplissez le formulaire ci-contre pour postuler à la formation SheTech. Les places sont limitées à 250 participantes.</p>
+                    
+                    <div class="registration-steps">
+                        <h3>Processus de sélection</h3>
+                        <div class="step-item active">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Soumission du formulaire</h4>
+                                <p>Remplissez et envoyez votre candidature en ligne</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Évaluation de la motivation</h4>
+                                <p>Analyse de votre lettre de motivation et profil</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Confirmation d'inscription</h4>
+                                <p>Réception de votre confirmation et accès à la plateforme</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="eligibility-criteria">
+                        <h3>Critères d'éligibilité</h3>
+                        <ul class="criteria-list">
+                            <li>Être une femme résidant au Bénin</li>
+                            <li>Avoir entre 18 et 35 ans</li>
+                            <li>Posséder un smartphone ou ordinateur</li>
+                            <li>Avoir une connexion internet stable</li>
+                            <li>Être disponible pour 4 semaines de formation</li>
+                            <li>Avoir une forte motivation pour le numérique</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <form class="registration-form" id="registrationForm">
+                    <div class="form-section">
+                        <h3>Informations personnelles</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">Prénom *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Nom *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Téléphone *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="age">Âge *</label>
+                                <select id="age" name="age" required>
+                                    <option value="">Sélectionnez votre âge</option>
+                                    <option value="18-25">18-25 ans</option>
+                                    <option value="26-30">26-30 ans</option>
+                                    <option value="31-35">31-35 ans</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="location">Ville de résidence *</label>
+                                <input type="text" id="location" name="location" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Formation choisie</h3>
+                        <div class="program-selection">
+                            <div class="program-option">
+                                <input type="radio" id="web" name="program" value="web" required>
+                                <label for="web" class="program-label">
+                                    <div class="program-icon">💻</div>
+                                    <div class="program-content">
+                                        <h4>Programmation Web</h4>
+                                        <p>HTML, CSS, JavaScript, React.js</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="program-option">
+                                <input type="radio" id="design" name="program" value="design" required>
+                                <label for="design" class="program-label">
+                                    <div class="program-icon">🎨</div>
+                                    <div class="program-content">
+                                        <h4>Graphisme</h4>
+                                        <p>Canva, Photoshop, Illustrator</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="program-option">
+                                <input type="radio" id="marketing" name="program" value="marketing" required>
+                                <label for="marketing" class="program-label">
+                                    <div class="program-icon">📈</div>
+                                    <div class="program-content">
+                                        <h4>Marketing Digital</h4>
+                                        <p>Réseaux sociaux, Email, SEO</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="program-option">
+                                <input type="radio" id="ai" name="program" value="ai" required>
+                                <label for="ai" class="program-label">
+                                    <div class="program-icon">🤖</div>
+                                    <div class="program-content">
+                                        <h4>Intelligence Artificielle</h4>
+                                        <p>ChatGPT, Midjourney, Automatisation</p>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Expérience et motivation</h3>
+                        <div class="form-group">
+                            <label for="experience">Niveau en informatique *</label>
+                            <select id="experience" name="experience" required>
+                                <option value="">Sélectionnez votre niveau</option>
+                                <option value="debutant">Débutante complète</option>
+                                <option value="basique">Connaissances basiques</option>
+                                <option value="intermediaire">Niveau intermédiaire</option>
+                                <option value="avance">Niveau avancé</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="motivation">Pourquoi voulez-vous rejoindre SheTech ? *</label>
+                            <textarea id="motivation" name="motivation" rows="4" placeholder="Expliquez votre motivation à rejoindre le programme..." required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="goals">Quels sont vos objectifs après la formation ? *</label>
+                            <textarea id="goals" name="goals" rows="3" placeholder="Décrivez vos projets professionnels..." required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="availability" name="availability" required>
+                            <label for="availability">Je confirme être disponible pour les 4 semaines de formation (du lundi au vendredi)</label>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="equipment" name="equipment" required>
+                            <label for="equipment">Je dispose d'un smartphone ou ordinateur avec connexion internet</label>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="commitment" name="commitment" required>
+                            <label for="commitment">Je m'engage à participer activement et à respecter le rythme de la formation</label>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span class="btn-text">Soumettre ma candidature</span>
+                            <span class="btn-loader" style="display: none;">⏳</span>
+                        </button>
+                        <p class="form-note">* Les champs marqués d'un astérisque sont obligatoires</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SheTech Bénin</h3>
+                    <p>Autonomiser 250 femmes béninoises par des compétences numériques stratégiques.</p>
+                    <div class="partners-footer">
+                        <p><strong>Porté par:</strong> BENILAB SERVICES & BENILAB TECH HUB</p>
+                        <p><strong>Soutenu par:</strong> UNIPOD Bénin</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📱</a>
+                        <a href="#" class="social-link">💼</a>
+                        <a href="#" class="social-link">📧</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Programmes</h4>
+                    <a href="#">Programmation Web</a>
+                    <a href="#">Graphisme</a>
+                    <a href="#">Marketing Digital</a>
+                    <a href="#">Intelligence Artificielle</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Impact</h4>
+                    <a href="#">Objectifs 2024</a>
+                    <a href="#">Projets réalisés</a>
+                    <a href="#">Témoignages</a>
+                    <a href="#">Statistiques</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Informations</h4>
+                    <a href="#">Calendrier</a>
+                    <a href="#">Critères de sélection</a>
+                    <a href="#">FAQ</a>
+                    <a href="join.html">Inscription</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SheTech Bénin - Un projet BENILAB en partenariat avec UNIPOD</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="join.js"></script>
+</body>
+</html>

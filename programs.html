@@ -1,0 +1,368 @@
+
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Programmes - SheTech Bénin</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="programs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="shetech_logo.png" alt="SheTech Logo" class="logo-img">
+                <span class="logo-text">SheTech</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Accueil</a>
+                <a href="index.html#about" class="nav-link">À propos</a>
+                <a href="programs.html" class="nav-link active">Programmes</a>
+                <a href="index.html#community" class="nav-link">Communauté</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="programs-hero">
+        <div class="programs-hero-content">
+            <div class="programs-hero-text">
+                <h1 class="programs-hero-title">
+                    <span class="gradient-text">Nos Programmes</span>
+                    <span class="title-continuation">4 semaines pour transformer votre avenir</span>
+                </h1>
+                <p class="programs-hero-subtitle">Choisissez votre voie parmi nos 4 filières de formation intensives. Chaque programme est conçu pour vous donner des compétences concrètes et immédiatement applicables.</p>
+                <div class="programs-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">250</span>
+                        <span class="stat-label">Places disponibles</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Filières proposées</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Semaines de formation</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Formation certifiante</span>
+                    </div>
+                </div>
+            </div>
+            <div class="programs-hero-visual">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="programs-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Choisissez votre voie</h2>
+                <p class="section-subtitle">Chaque filière vous mène vers une compétence numérique à forte valeur ajoutée</p>
+            </div>
+            <div class="programs-grid">
+                <div class="program-card-main" data-program="web">
+                    <div class="program-header-main">
+                        <div class="program-icon-main">💻</div>
+                        <div class="program-meta">
+                            <h3>Programmation Web</h3>
+                            <span class="program-badge">Débutants acceptés</span>
+                        </div>
+                    </div>
+                    <p class="program-description">Maîtrisez le développement web moderne en partant de zéro jusqu'au déploiement de votre premier site portfolio.</p>
+                    <div class="program-modules">
+                        <div class="module-item">
+                            <span class="module-week">Semaine 1</span>
+                            <span class="module-title">HTML5 & CSS3</span>
+                        </div>
+                        <div class="module-item">
+                            <span class="module-week">Semaine 2</span>
+                            <span class="module-title">JavaScript Essentiel</span>
+                        </div>
+                        <div class="module-item">
+                            <span class="module-week">Semaine 3</span>
+                            <span class="module-title">Introduction React.js</span>
+                        </div>
+                        <div class="module-item">
+                            <span class="module-week">Semaine 4</span>
+                            <span class="module-title">Déploiement GitHub & Netlify</span>
+                        </div>
+                    </div>
+                    <div class="program-outcome">
+                        <strong>Résultat attendu:</strong> Mini-site portfolio personnel en ligne
+                    </div>
+                    <a href="join.html?program=web" class="btn btn-primary">S'inscrire</a>
+                </div>
+
+                <div class="program-card-main" data-program="design">
+                    <div class="program-header-main">
+                        <div class="program-icon-main">🎨</div>
+                        <div class="program-meta">
+                            <h3>Graphisme</h3>
+                            <span class="program-badge">Creative & Design</span>
+                        </div>
+                    </div>
+                    <p class="program-description">Devenez créatrice de contenus visuels professionnels avec les outils modernes de design graphique.</p>
+                    <div class="program-modules">
+                        <div class="module-item">
+                            <span class="module-week">Semaine 1</span>
+                            <span class="module-title">Bases de Canva et design visuel</span>
+                        </div>
+                        <div class="module-item">
+                            <span class="module-week">Semaine 2</span>
+                            <span class="module-title">Adobe Photoshop</span>
+                        </div>
+                        <div class="module-item">
+                            <span class="module-week">Semaine 3</span>
+                            <span class="module-title">Adobe Illustrator</span>
+                        </div>
+                        <div class="module-item">
+                            <span class="module-week">Semaine 4</span>
+                            <span class="module-title">Création de kit de communication</span>
+                        </div>
+                    </div>
+                    <div class="program-outcome">
+                        <strong>Résultat attendu:</strong> Kit de communication et portfolio graphique
+                    </div>
+                    <a href="join.html?program=design" class="btn btn-primary">S'inscrire</a>
+                </div>
+
+                <div class="program-card-main" data-program="marketing">
+                    <div class="program-header-main">
+                        <div class="program-icon-main">📈</div>
+                        <div class="program-meta">
+                            <h3>Marketing Digital</h3>
+                            <span class="program-badge">Business & Growth</span>
+                        </div>
+                    </div>
+                    <p class="program-description">Maîtrisez les stratégies digitales pour promouvoir des produits et services en ligne efficacement.</p>
+                    <div class="program-modules">
+                        <div class="module-item">
+                            <span class="module-week">Semaine 1</span>
+                            <span class="module-title">Fondamentaux du marketing digital</span>
+                        </div>
+                        <div class="module-item">
+                            <span class="module-week">Semaine 2</span>
+                            <span class="module-title">Réseaux sociaux & Content Creation</span>
+                        </div>
+                        <div class="module-item">
+                            <span class="module-week">Semaine 3</span>
+                            <span class="module-title">Emailing & Automation</span>
+                        </div>
+                        <div class="module-item">
+                            <span class="module-week">Semaine 4</span>
+                            <span class="module-title">Tunnel de vente et stratégie digitale</span>
+                        </div>
+                    </div>
+                    <div class="program-outcome">
+                        <strong>Résultat attendu:</strong> Mini-stratégie digitale avec tunnel de conversion
+                    </div>
+                    <a href="join.html?program=marketing" class="btn btn-primary">S'inscrire</a>
+                </div>
+
+                <div class="program-card-main" data-program="ai">
+                    <div class="program-header-main">
+                        <div class="program-icon-main">🤖</div>
+                        <div class="program-meta">
+                            <h3>Intelligence Artificielle</h3>
+                            <span class="program-badge">Future Tech</span>
+                        </div>
+                    </div>
+                    <p class="program-description">Apprenez à utiliser l'IA générative pour automatiser les tâches et créer du contenu innovant.</p>
+                    <div class="program-modules">
+                        <div class="module-item">
+                            <span class="module-week">Semaine 1</span>
+                            <span class="module-title">Introduction à l'IA et ChatGPT</span>
+                        </div>
+                        <div class="module-item">
+                            <span class="module-week">Semaine 2</span>
+                            <span class="module-title">Génération de contenus (texte, image)</span>
+                        </div>
+                        <div class="module-item">
+                            <span class="module-week">Semaine 3</span>
+                            <span class="module-title">Automatisation des tâches</span>
+                        </div>
+                        <div class="module-item">
+                            <span class="module-week">Semaine 4</span>
+                            <span class="module-title">Création d'un projet IA</span>
+                        </div>
+                    </div>
+                    <div class="program-outcome">
+                        <strong>Résultat attendu:</strong> Outil IA personnel (assistant, générateur)
+                    </div>
+                    <a href="join.html?program=ai" class="btn btn-primary">S'inscrire</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="learning-method">
+        <div class="container">
+            <div class="method-content">
+                <div class="method-text">
+                    <h2 class="section-title">Notre Méthode d'Apprentissage</h2>
+                    <p class="section-subtitle">Une approche hybride combinant théorie, pratique et mentorat personnalisé</p>
+                    <div class="method-features">
+                        <div class="method-feature">
+                            <div class="feature-icon">🎯</div>
+                            <div class="feature-content">
+                                <h3>Formation en ligne 24/7</h3>
+                                <p>Accès illimité à notre plateforme BENILAB LEARN avec des contenus MOOC de qualité mondiale</p>
+                            </div>
+                        </div>
+                        <div class="method-feature">
+                            <div class="feature-icon">💼</div>
+                            <div class="feature-content">
+                                <h3>Mentorat hebdomadaire</h3>
+                                <p>1h/semaine de mentorat collectif par filière avec des experts du domaine</p>
+                            </div>
+                        </div>
+                        <div class="method-feature">
+                            <div class="feature-icon">🌟</div>
+                            <div class="feature-content">
+                                <h3>Apprentissage progressif</h3>
+                                <p>Modules débloqués séquentiellement avec validation des acquis à chaque étape</p>
+                            </div>
+                        </div>
+                        <div class="method-feature">
+                            <div class="feature-icon">📊</div>
+                            <div class="feature-content">
+                                <h3>Suivi personnalisé</h3>
+                                <p>Tableau de bord de progression en temps réel et feedback personnalisé</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="method-visual">
+                    <div class="timeline-container">
+                        <div class="timeline-week">
+                            <div class="week-number">1</div>
+                            <div class="week-content">
+                                <h4>Semaine 1</h4>
+                                <p>Fondamentaux et bases théoriques</p>
+                            </div>
+                        </div>
+                        <div class="timeline-week">
+                            <div class="week-number">2</div>
+                            <div class="week-content">
+                                <h4>Semaine 2</h4>
+                                <p>Consolidation des acquis</p>
+                            </div>
+                        </div>
+                        <div class="timeline-week">
+                            <div class="week-number">3</div>
+                            <div class="week-content">
+                                <h4>Semaine 3</h4>
+                                <p>Techniques avancées</p>
+                            </div>
+                        </div>
+                        <div class="timeline-week">
+                            <div class="week-number">4</div>
+                            <div class="week-content">
+                                <h4>Semaine 4</h4>
+                                <p>Projet final et certification</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2 class="section-title">Prête à transformer votre vie ?</h2>
+                    <p class="section-subtitle">Rejoignez 249 autres femmes béninoises dans cette aventure numérique transformatrice</p>
+                    <div class="cta-features">
+                        <div class="cta-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Formation certifiante</span>
+                        </div>
+                        <div class="cta-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Mentorat personnalisé</span>
+                        </div>
+                        <div class="cta-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Accès aux espaces UNIPOD</span>
+                        </div>
+                        <div class="cta-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Certificat de réussite</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-actions">
+                    <a href="join.html" class="btn btn-primary btn-large">Je m'inscris maintenant</a>
+                    <p class="cta-note">Places limitées à 250 participantes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SheTech Bénin</h3>
+                    <p>Autonomiser 250 femmes béninoises par des compétences numériques stratégiques.</p>
+                    <div class="partners-footer">
+                        <p><strong>Porté par:</strong> BENILAB SERVICES & BENILAB TECH HUB</p>
+                        <p><strong>Soutenu par:</strong> UNIPOD Bénin</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📱</a>
+                        <a href="#" class="social-link">💼</a>
+                        <a href="#" class="social-link">📧</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Programmes</h4>
+                    <a href="programs.html#web">Programmation Web</a>
+                    <a href="programs.html#design">Graphisme</a>
+                    <a href="programs.html#marketing">Marketing Digital</a>
+                    <a href="programs.html#ai">Intelligence Artificielle</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Impact</h4>
+                    <a href="#">Objectifs 2024</a>
+                    <a href="#">Projets réalisés</a>
+                    <a href="#">Témoignages</a>
+                    <a href="#">Statistiques</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Informations</h4>
+                    <a href="#">Calendrier</a>
+                    <a href="#">Critères de sélection</a>
+                    <a href="#">FAQ</a>
+                    <a href="join.html">Inscription</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SheTech Bénin - Un projet BENILAB en partenariat avec UNIPOD</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="programs.js"></script>
+</body>
+</html>

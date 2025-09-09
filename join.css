@@ -1,0 +1,432 @@
+
+```
+/* Join Page Specific Styles */
+.join-hero {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background: radial-gradient(circle at top right, rgba(155, 89, 182, 0.3) 0%, transparent 50%), 
+                radial-gradient(circle at bottom left, rgba(233, 30, 99, 0.3) 0%, transparent 50%),
+                var(--dark-bg);
+    padding-top: 100px;
+}
+
+.join-hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.join-hero-title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.join-hero-subtitle {
+    font-size: 1.1rem;
+    color: var(--gray-text);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.join-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--gray-text);
+    transition: all 0.3s ease;
+}
+
+.benefit-item:hover {
+    color: var(--light-text);
+    transform: translateX(10px);
+}
+
+.benefit-icon {
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.benefit-item:hover .benefit-icon {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 10px var(--primary-color));
+}
+
+/* Registration Section */
+.registration-section {
+    padding: 4rem 0;
+}
+
+.registration-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.registration-info {
+    position: sticky;
+    top: 120px;
+}
+
+.registration-steps {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 2rem 0;
+    backdrop-filter: blur(10px);
+}
+
+.registration-steps h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.step-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.step-item.active {
+    opacity: 1;
+}
+
+.step-item.active .step-number {
+    background: var(--gradient-1);
+    color: white;
+    transform: scale(1.1);
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--card-hover);
+    border: 2px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.step-content h4 {
+    margin-bottom: 0.25rem;
+}
+
+.step-content p {
+    color: var(--gray-text);
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.eligibility-criteria {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+}
+
+.eligibility-criteria h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.criteria-list {
+    list-style: none;
+}
+
+.criteria-list li {
+    padding: 0.5rem 0;
+    color: var(--gray-text);
+    line-height: 1.5;
+}
+
+.criteria-list li::before {
+    content: "✓";
+    color: var(--secondary-color);
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+/* Registration Form */
+.registration-form {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 2.5rem;
+    backdrop-filter: blur(10px);
+}
+
+.form-section {
+    margin-bottom: 2.5rem;
+}
+
+.form-section h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--light-text);
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    background: var(--darker-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    color: var(--light-text);
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 20px rgba(155, 89, 182, 0.3);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--gray-text);
+}
+
+/* Program Selection */
+.program-selection {
+    display: grid;
+    gap: 1rem;
+}
+
+.program-option {
+    position: relative;
+}
+
+.program-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.program-label {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: var(--darker-bg);
+    border: 2px solid var(--border-color);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.program-option input[type="radio"]:checked + .program-label {
+    border-color: var(--primary-color);
+    background: var(--card-hover);
+    box-shadow: 0 0 20px rgba(155, 89, 182, 0.2);
+}
+
+.program-label:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.program-icon {
+    font-size: 2rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--card-hover);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.program-content h4 {
+    margin-bottom: 0.25rem;
+}
+
+.program-content p {
+    color: var(--gray-text);
+    font-size: 0.9rem;
+}
+
+/* Checkbox Group */
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: auto;
+    margin-top: 0.25rem;
+}
+
+.checkbox-group label {
+    margin-bottom: 0;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+/* Form Actions */
+.form-actions {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.btn-submit {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.btn-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.form-note {
+    color: var(--gray-text);
+    font-size: 0.875rem;
+    font-style: italic;
+}
+
+/* Success Message */
+.success-message {
+    background: rgba(76, 175, 80, 0.1);
+    border: 2px solid #4CAF50;
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    color: #4CAF50;
+}
+
+.success-message h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.success-message p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .join-hero-content,
+    .registration-wrapper {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .join-hero-title {
+        font-size: 2.5rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .registration-form,
+    .registration-steps,
+    .eligibility-criteria {
+        padding: 1.5rem;
+    }
+
+    .program-label {
+        padding: 1rem;
+    }
+
+    .program-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+
+    .registration-info {
+        position: relative;
+        top: 0;
+    }
+}
+
+/* Loading Animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.btn-loader {
+    display: inline-block;
+    animation: spin 1s linear infinite;
+}
+
+/* Form Validation Styles */
+.form-group.error input,
+.form-group.error select,
+.form-group.error textarea {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 10px rgba(233, 30, 99, 0.3);
+}
+
+.form-group.success input,
+.form-group.success select,
+.form-group.success textarea {
+    border-color: #4CAF50;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.3);
+}
+
+.error-message {
+    color: var(--secondary-color);
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: none;
+}
+
+.form-group.error .error-message {
+    display: block;
+}
