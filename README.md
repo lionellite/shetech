@@ -5,7 +5,7 @@
 A clean, responsive front-end website built with HTML, CSS and JavaScript. shetech is a static site / landing-portfolio template focused on accessibility, responsive layout, and simple interactive UI elements (animations, navigation, and contact/gallery components). It’s intended as a lightweight starting point for personal portfolios, small projects, or informational sites.
 
 Demo
-- (Add your live demo / GitHub Pages URL here)
+- [(live demo)](https://lionellite.github.io/shetech/)
 
 Key features
 - Responsive layout for desktop, tablet, and mobile
@@ -82,10 +82,6 @@ Contributing
 
 If you want specific contribution guidelines, testing requirements, or a Code of Conduct added, include them and I’ll update this README.
 
-Screenshots
-- Add screenshots to illustrate the site. Place images in assets/img/ and reference them here:
-  ![Home view](assets/img/screenshot-home.png)
-  ![Mobile view](assets/img/screenshot-mobile.png)
 
 License
 - This project uses the MIT License by default. Add a LICENSE file to the repo with the full MIT text, or change to your preferred license.
